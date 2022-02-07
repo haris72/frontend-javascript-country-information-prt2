@@ -541,19 +541,20 @@ async function fetchCountrys() {
         const results1 = output.data.sort((a, b)=>a.population - b.population
         );
         const results2 = results1.map((result)=>{
+            let { name , region  } = result;
             const countrysList = document.getElementById('country-list');
             const countryItem = document.createElement('li');
             country = document.createElement('h2');
-            country.textContent = `${result.name}`;
+            country.textContent = name;
             population = document.createElement('h3');
             population.textContent = "Has a population of " + result.population + " people";
             flag = document.createElement('img');
-            flag.setAttribute('src', `${result.flag}`);
+            flag.setAttribute('src', result.flag);
             flag.textContent = flag;
             countryItem.appendChild(flag);
             countryItem.appendChild(country);
             countryItem.appendChild(population);
-            let regioNaam1 = result.region;
+            let regioNaam1 = region;
             regio(regioNaam1);
             country.classList.add(regioKleur);
             countrysList.appendChild(countryItem);
