@@ -543,18 +543,17 @@ async function fetchCountrys() {
         const results2 = results1.map((result)=>{
             const countrysList = document.getElementById('country-list');
             const countryItem = document.createElement('li');
-            const { name , population , flag , region  } = result;
             country = document.createElement('h2');
-            country.textContent = `${name}`;
+            country.textContent = `${result.name}`;
             population = document.createElement('h3');
-            population.textContent = "Has a population of " + population + " people";
+            population.textContent = "Has a population of " + result.population + " people";
             flag = document.createElement('img');
-            flag.setAttribute('src', `${flag}`);
+            flag.setAttribute('src', `${result.flag}`);
             flag.textContent = flag;
             countryItem.appendChild(flag);
             countryItem.appendChild(country);
             countryItem.appendChild(population);
-            let regioNaam1 = region;
+            let regioNaam1 = result.region;
             regio(regioNaam1);
             country.classList.add(regioKleur);
             countrysList.appendChild(countryItem);
