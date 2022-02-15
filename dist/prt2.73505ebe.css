@@ -1,0 +1,31 @@
+.zoek {
+
+    position: relative;
+    width: 100%;
+}
+
+
+.titel {
+
+    font-family: "Comic Sans MS", fantasy;
+    font-size: 500%;
+
+}
+
+.zoek_veld {
+    position: relative;
+    top:80px;
+    width:560px;
+    height: 55px;
+    left: 42%;
+
+}
+
+
+#2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*# sourceMappingURL=prt2.73505ebe.css.map */

@@ -74,4 +74,12 @@ li > h3{
     font-size: 23px;
     float: left;
 }
+
+.zoek, .zoek :hover,.zoek :visited {
+    text-decoration: none;
+    font-size: x-large;
+    color: green;
+}
+
+
 /*# sourceMappingURL=index.4d663569.css.map */

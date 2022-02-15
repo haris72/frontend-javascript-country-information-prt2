@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;500&display=swap');
+
+
+body {
+
+    display: flex;
+    justify-content: center;
+}
+
+section article{
+    display: flex;
+    justify-content: center;
+}
+
+ section article .titel {
+    font-family: 'Zen Kaku Gothic New', Arial, sans-serif;
+    font-size: 500%;
+    text-align: center;
+}
+
+section article #zoek-veld {
+    margin-top: 30px;
+    width:560px;
+    height: 55px;
+    font-size: x-large;
+}
+
+section article button {
+    margin-top: 30px;
+    width:83px;
+    height: 62px;
+    background-color: lightgreen;
+    font-size: x-large;
+}
+
+
+.flag {
+    width: 6%;
+    float: left;
+    margin-right: 20px;
+}
+
+h3{
+position: relative;
+    top: -20px;
+    margin: 20px;
+    font-family: "Comic Sans MS", fantasy;
+
+
+}
+
+li{
+    list-style-type: none;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    font-size: x-large;
+    position: relative;
+    top: -50px;
+}
+
+#user-warning {
+    font-size: x-large;
+    height: 60px;
+    left: 44%;
+    color:red;
+}
+
+div {
+position: relative;
+    top:-20px;
+    line-height: 2;
+}
